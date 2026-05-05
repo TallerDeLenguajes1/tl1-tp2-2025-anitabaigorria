@@ -1,0 +1,9 @@
+RESPUESTAS
+(Punto 2.f) sobre la visibilidad del archivo tp2_1_2.c en la rama main:
+No es posible ver el archivo en la carpeta local cuando estamos parados en main, debido a que Git gestiona el directorio de trabajo de forma dinámica: al cambiar de rama con git checkout, el sistema "limpia" la carpeta y restaura únicamente los archivos que pertenecen a la versión activa (la rama main en este caso), ocultando los cambios que solo existen en la rama Opcion_2.  
+
+(Punto 2.g) diferencias en el Source Control antes del merge:
+En la representación gráfica del historial (el Grafo), se nota que la línea de tiempo se ha bifurcado en dos caminos independientes. Se puede observar que main tiene el archivo Respuestas.txt, mientras que la rama Opcion_2 se quedó "atrás" en el tiempo respecto a ese archivo, pero tiene su propio commit en esa rama.  
+
+(Punto 2.h) diferencias en el Source Control después del merge:
+Una vez realizado el comando git merge Opcion_2, se nota que las dos líneas de tiempo paralelas se vuelven a unir en un solo punto, indicando que la rama main ahora integra toda la historia y los archivos creados en la rama secundaria, unificando el proyecto nuevamente.  
